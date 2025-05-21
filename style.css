@@ -1,0 +1,66 @@
+
+html {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(45deg, #5c8af5, #ccfff0);
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 2.5em;
+  margin-top: 50px;
+}
+
+h2 {
+  color: #7a7fff;
+  font-size: 1.8em;
+}
+
+button {
+  background-color: #fff;
+  border: none;
+  padding: 15px 30px;
+  margin: 10px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+button {
+  background-color: #5c8af5;
+  color: white;
+}
+
+button:hover {
+  background-color: #4670cc;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.snowflake {
+  position: fixed;
+  top: -10px;
+  color: white;
+  animation: fall linear forwards;
+  z-index: 1;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
